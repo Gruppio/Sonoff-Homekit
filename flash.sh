@@ -1,6 +1,7 @@
 #!/bin/bash
 
 SONOFF_PORT="/dev/cu.wchusbserial1420"
+
 esptool.py \
             -p $SONOFF_PORT \
             --baud 115200 \
