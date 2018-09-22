@@ -1,5 +1,5 @@
 <img src="images/sonoffonly.png" alt="Sonoff" width="150"/>
-<br>
+<img src="images/transparent.png" alt="Sonoff" width="10"/>
 <img src="/images/homekit-badge.svg" alt="Sonoff"/>
 
 # Sonoff Homekit
