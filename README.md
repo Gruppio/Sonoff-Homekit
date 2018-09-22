@@ -11,6 +11,8 @@ It is not based on the Tasmota Fw, you don't need HomeBridge running on a Raspbe
 
 The implementation use Apple provided specifications for developers, so it is a stable and supported software and it will keep working for a long time.
 
+Now you finally can have a HomeKit devices without spending a lot of money!
+
 ## Instructions
 
 ### Flash the Sonoff
