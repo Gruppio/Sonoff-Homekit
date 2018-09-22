@@ -1,8 +1,8 @@
-<img src="images/sonoffonly.png" alt="Sonoff" width="150"/> <img src="images/transparent.png" alt="Sonoff" width="20"/><img src="/images/homekit-badge.svg" alt="Sonoff"/>
-
 # Sonoff Homekit
 
 This firmware makes the **Sonoff WIFI Smart Switch** compatible with **Apple Homekit**!
+
+<img src="images/sonoffonly.png" alt="Sonoff" width="150"/> <img src="images/transparent.png" alt="Sonoff" width="20"/><img src="/images/homekit-badge.svg" alt="Sonoff"/>
 
 ### Homekit runs on the Sonoff ! 😳
 
