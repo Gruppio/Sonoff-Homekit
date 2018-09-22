@@ -36,10 +36,10 @@ Done! 🎉
 
 ## If you like this project please:
 
-<a href="https://www.buymeacoffee.com/gruppio" target="_blank"><img src="images/buymeacoffee.png" alt="Buy Me A Coffee" width="300" ></a>
+<a href="bmc.xyz/l/SonoffHomekit" target="_blank"><img src="images/buymeacoffee.png" alt="Buy Me A Coffee" width="300" ></a>
 
 My supporters will also receive immediately:
 
 * A **Step-by-Step Video Tutorial** that will help you to flash and connect your Sonoff
-* All the **Source Code**
+* The **Source Code**
 * A personal **E-Mail** where you can write to me your Issues
