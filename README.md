@@ -2,6 +2,8 @@
 
 # Sonoff Homekit
 
+![alt text](/images/homekit-badge.svg "Apple Homekit Badge")
+
 This is a custom made firmware for the sonoff wifi smart switch that makes it compatible with the Apple Homekit!
 
 ### Homekit runs on the Sonoff ! 😳
@@ -37,6 +39,7 @@ Done! 🎉
 <a href="https://www.buymeacoffee.com/gruppio" target="_blank"><img src="images/buymeacoffee.png" alt="Buy Me A Coffee" width="300" ></a>
 
 My supporters will also receive immediately:
+
 * A **Step-by-Step Video Tutorial** that will help you to flash and connect your Sonoff
 * All the **Source Code**
 * A personal **E-Mail** where you can write to me your Issues
