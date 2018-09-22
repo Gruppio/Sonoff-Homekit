@@ -15,9 +15,10 @@ Now you finally can have a HomeKit devices without spending a lot of money!
 
 ### Video Demo
 
+Click on the image for play the video:
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=_PLeu4v50h0
 " target="_blank"><img src="http://img.youtube.com/vi/_PLeu4v50h0/0.jpg" 
-alt="Video" width="240" height="180" border="10" /></a>
+alt="Video" width="480" height="270" border="10" /></a>
 
 ## Instructions
 
