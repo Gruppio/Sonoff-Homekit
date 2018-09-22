@@ -1,8 +1,10 @@
-![alt text](/images/homekit-badge.svg "Apple Homekit Badge")
+<img src="images/sonoffonly.png" alt="Sonoff" width="150"/>
+<br>
+<img src="/images/homekit-badge.svg" alt="Sonoff"/>
 
 # Sonoff Homekit
 
-This is a custom made firmware for the sonoff wifi smart switch that makes it compatible with the Apple Homekit!
+This firmware makes the **Sonoff WIFI Smart Switch** compatible with **Apple Homekit**!
 
 ### Homekit runs on the Sonoff ! 😳
 
@@ -13,8 +15,8 @@ The implementation use Apple provided specifications for developers, so it is a 
 
 ## Instructions
 
-### Flashing the Sonoff
- 1) Unplug your sonoff from the power line
+### Flash the Sonoff
+ 1) Unplug your sonoff from the power line _(or you can burn your PC)_
  2) Connect your Sonoff to a serial adapter @ 3.3v
  3) Run the `flash.sh` script 
 
@@ -25,10 +27,10 @@ The implementation use Apple provided specifications for developers, so it is a 
  4) Open the `Home` app
  5) Click the `+` symbol
  6) Click `I don't have the code...`
- 7) Select the Sonoff Switch 
- 7.1 If the sonoff does not appear on top of the page try to press the sonoff button a couple of times and kill the Home App
+ 7) Select the Sonoff-xxx Switch 
+ 7.1 If the Sonoff-xxx does not appear on top of the page try to press the sonoff button a couple of times and kill the Home App
  9) Confirm that you want to add the Sonoff
- 10) Insert the Password that is `111111111`
+ 10) Insert the Password that is `11111111`
 
 Done! 🎉 
 
