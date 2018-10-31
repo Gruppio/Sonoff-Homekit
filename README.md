@@ -51,3 +51,14 @@ My supporters will also receive immediately:
 * A **Step-by-Step Video Tutorial** that will help you to flash and connect your Sonoff
 * The **Source Code**
 * A personal **E-Mail** where you can write to me your Issues
+
+---
+
+#### Special thanks to:
+@maximkulkin
+
+This project would not have existed without:
+https://github.com/maximkulkin/esp-homekit
+https://github.com/maximkulkin/esp-homekit-demo
+https://github.com/maximkulkin/esp-wifi-config
+
