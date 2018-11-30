@@ -13,6 +13,9 @@ The implementation use Apple provided specifications for developers, so it is a 
 
 Now you finally can have a HomeKit devices without spending a lot of money!
 
+### Compatible Devices
+This Software is currently tested on: **Sonoff Basic**, **Sonoff Slampher**, **Sonoff S26** (thanks Arjan)
+
 ### Video Demo
 
 Click on the image for play the video:
