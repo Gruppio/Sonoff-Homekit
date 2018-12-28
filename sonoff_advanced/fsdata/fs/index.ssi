@@ -1,0 +1,45 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon16.png">
+    <title>Sonoff</title>
+    <style> 
+    input {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+
+        width: 100%;
+        height: 200px;
+        padding: 10px 25px;
+        color: white;
+        border-radius: 10px;
+        font-size: 100px;
+    }
+    body {
+        background: #f0f0f0; 
+    }
+    h1 { 
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+        font-size: 100px; 
+        font-style: normal; 
+        font-variant: normal; 
+        font-weight: bold; 
+    }
+    </style>
+</head>
+<body>
+    <h1>Sonoff: <!--#state--></h1>
+    <form action="." method="get">
+        <input type="submit" value="on" name="set" id="button_on" style="background: #4CAF50;"/>
+    </form>
+
+    <form action="." method="get">
+        <input type="submit" value="off" name="set" id="button_off" style="background: #F44336;"/>
+    </form>
+</body>
+</html>
