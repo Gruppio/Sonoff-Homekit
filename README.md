@@ -7,7 +7,7 @@ This firmware makes the **Sonoff WIFI Smart Switch** compatible with **Apple Hom
 ### Homekit runs on the Sonoff ! 😳
 
 Unlike other projects on github, this firmware does NOT require anything else in order to work.
-It is not based on the Tasmota Fw, you don't need HomeBridge running on a Raspberry-Pi or an MQTT server, a Wi-Fi connection and an Apple Device are enough!
+It is not based on the Tasmota Fw, you don't need HomeBridge running on a Raspberry-Pi or an MQTT server, since HomeKit runs natively are enough a Wi-Fi connection and an Apple Device!
 
 The implementation use Apple provided specifications for developers, so it is a stable and supported software and it will keep working for a long time.
 
@@ -24,7 +24,9 @@ Click on the image for play the video:
 " target="_blank"><img src="http://img.youtube.com/vi/_PLeu4v50h0/0.jpg" 
 alt="Video" width="480" height="270" border="10" /></a>
 
-## Instructions
+---
+
+## Installation Instructions
 
 ### Flash the Sonoff
  1) Unplug your sonoff from the power line _(or you can burn your PC)_
@@ -44,6 +46,7 @@ alt="Video" width="480" height="270" border="10" /></a>
  10) Insert the Password that is `11111111`
 
 Done! 🎉 
+
 
 ## If you like this project please:
 
