@@ -1,6 +1,6 @@
 #!/bin/bash
 
-POWERON_STATE="OFF" # Change this to "OFF" if you want that your Sonoff will be OFF when powered 
+POWERON_STATE="ON" # Change this to "OFF" if you want that your Sonoff will be OFF when powered 
 
 SONOFF_PORT="/dev/cu.wchusbserial14310"
 
