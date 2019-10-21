@@ -8,7 +8,7 @@ esptool.py \
             -p $SONOFF_PORT \
             --baud 115200 \
             write_flash \
-            -fs 8m \
+            -fs 1MB \
             -fm dout \
             -ff 40m \
             0x0 ./firmware/rboot.bin \
