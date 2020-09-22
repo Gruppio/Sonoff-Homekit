@@ -84,6 +84,7 @@ cd ../esp-homekit-demo
 docker run -it --rm -v "$(pwd)":/project -w /project esp-rtos make -C examples/sonoff_advanced all
 ```
 You should now see a `sonoff.bin` file in the `esp-homekit-demo/examples/sonoff_advanced/firmware` folder.
+
 6. Copy the firmware back for flashing:
 ```shell
 # Adjust the _ON / _OFF suffix to reflect your `POWER_ON_STATE` choice on step 5. 
