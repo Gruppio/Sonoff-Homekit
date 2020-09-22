@@ -51,8 +51,6 @@ By default the Sonoff will have a Enabled state at power on, you can change this
 
 ## Build Instructions
 
-### Setup dependencies
-
 Follow the [esp-homekit-demo build instructions](https://github.com/maximkulkin/esp-homekit-demo/wiki/Build-instructions-ESP8266-(Docker). 
 Dockerfiles for [esp-open-sdk](./esp-sdk-dockerfile) and [esp-open-rtos](./esp-open-dockerfile) are provided for convenience.
 Here is a summary of the steps:
@@ -73,6 +71,7 @@ docker build . -f esp-rtos-dockerfile -t esp-rtos
 ```shell
 export SDK_PATH="$(pwd)/esp-open-rtos"
 ```
+
 4. Copy source code to `esp-homekit-demo` folder:
 ```shell
 cp -R .sonoff_advanced ../esp-homekit-demo/examples/
@@ -84,6 +83,7 @@ cd ../esp-homekit-demo
 docker run -it --rm -v "$(pwd)":/project -w /project esp-rtos make -C examples/sonoff_advanced all
 ```
 You should now see a `sonoff.bin` file in the `esp-homekit-demo/examples/sonoff_advanced/firmware` folder.
+
 6. Copy the firmware back for flashing:
 ```shell
 # Adjust the _ON / _OFF suffix to reflect your `POWER_ON_STATE` choice on step 5. 
