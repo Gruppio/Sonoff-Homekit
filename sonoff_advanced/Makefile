@@ -5,10 +5,10 @@ EXTRA_COMPONENTS = \
 	extras/dhcpserver \
 	extras/mbedtls \
 	extras/httpd \
-	$(abspath ../../components/wifi_config) \
-	$(abspath ../../components/wolfssl) \
-	$(abspath ../../components/cJSON) \
-	$(abspath ../../components/homekit)
+	$(abspath ../../components/esp8266-open-rtos/wifi_config) \
+	$(abspath ../../components/common/wolfssl) \
+	$(abspath ../../components/esp8266-open-rtos/cJSON) \
+	$(abspath ../../components/common/homekit)
 
 FLASH_SIZE ?= 8
 FLASH_MODE ?= dout
