@@ -69,7 +69,7 @@ docker build . -f esp-rtos-dockerfile -t esp-rtos
 ```
 3. Setup SDK enviroment variable:
 ```shell
-export SDK_PATH="$(pwd)/esp-open-rtos"
+export SDK_PATH=$(dirname "$(pwd)")/esp-open-rtos
 ```
 
 4. Copy source code to `esp-homekit-demo` folder:
