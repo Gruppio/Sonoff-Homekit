@@ -1,0 +1,17 @@
+FROM ubuntu:16.04 as builder
+
+RUN apt-get update && apt-get install -y git
+
+# RUN git clone --recursive https://github.com/Superhouse/esp-open-rtos.git /opt/esp-open-rtos
+
+# I had to checkout a previous version because of an error when updating the submodule lvgl/lv_drivers
+# For details refer to https://stackoverflow.com/questions/2155887/git-submodule-head-reference-is-not-a-tree-error
+RUN git clone https://github.com/Superhouse/esp-open-rtos.git /opt/esp-open-rtos
+RUN cd /opt/esp-open-rtos/ && git checkout bbc22571ec9584d5e8e90a46a39e91ef5f2c4bbd
+RUN cd /opt/esp-open-rtos/ && git submodule init && git submodule update
+
+FROM esp-sdk:latest
+
+COPY --from=builder /opt/esp-open-rtos /opt/esp-open-rtos
+
+ENV SDK_PATH /opt/esp-open-rtos

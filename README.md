@@ -49,7 +49,71 @@ By default the Sonoff will have a Enabled state at power on, you can change this
 
 ---
 
+## Build Instructions
+
+Follow the [esp-homekit-demo build instructions](https://github.com/maximkulkin/esp-homekit-demo/wiki/Build-instructions-ESP8266-(Docker)). 
+Dockerfiles for [esp-open-sdk](./esp-sdk-dockerfile) and [esp-open-rtos](./esp-open-dockerfile) are provided for convenience.
+Here is a summary of the steps:
+
+1. Clone the repositories:
+```shell
+git clone https://github.com/thefonseca/Sonoff-Homekit.git
+git clone --recursive https://github.com/SuperHouse/esp-open-rtos.git
+git clone --recursive https://github.com/maximkulkin/esp-homekit-demo.git
+```
+2. Build Docker images:
+```shell
+cd Sonoff-Homekit
+docker build . -f esp-sdk-dockerfile -t esp-sdk
+docker build . -f esp-rtos-dockerfile -t esp-rtos
+```
+3. Setup SDK enviroment variable:
+```shell
+export SDK_PATH=$(dirname "$(pwd)")/esp-open-rtos
+```
+
+4. Copy source code to `esp-homekit-demo` folder:
+```shell
+cp -R ./sonoff_advanced ../esp-homekit-demo/examples/
+```
+5. Compile (make sure you adjust the `POWER_ON_STATE` variable in `poweronstate.h` 
+accordingly before this step):
+```shell
+cd ../esp-homekit-demo
+docker run -it --rm -v "$(pwd)":/project -w /project esp-rtos make -C examples/sonoff_advanced all
+```
+You should now see a `sonoff.bin` file in the `esp-homekit-demo/examples/sonoff_advanced/firmware` folder.
+
+6. Copy the firmware back for flashing:
+```shell
+# Adjust the "_ON" / "_OFF" suffix to reflect your `POWER_ON_STATE` choice on step 5. 
+cp examples/sonoff_advanced/firmware/sonoff.bin ../Sonoff-Homekit/firmware/Sonoff_OFF.bin
+```
+
+You should be ready for flashing the new firmware. Also, you will need the bootloader files
+which you can get [here](https://github.com/SuperHouse/esp-open-rtos/tree/master/bootloader/firmware_prebuilt) or 
+[compile yourself](https://github.com/SuperHouse/esp-open-rtos/tree/master/bootloader) if you feel adventurous. 
+
+---
+
 ## Installation Instructions
+
+### Prepare the hardware
+1. Before flashing, check out these [hardware preparation instructions](https://tasmota.github.io/docs/Getting-Started/#hardware-preparation).
+2. Setup your serial port environment variable:
+```shell
+# you can run this command to find the name of your USB device  
+ls /dev/tty.*
+
+export ESPPORT=/dev/tty.SLAB_USBtoUART
+```
+3. Backup your current firmware. You can do this using [esptool](https://github.com/espressif/esptool):
+```shell
+pip install esptool
+
+# Backup
+esptool.py --port $ESPPORT read_flash 0x00000 0x100000 fwbackup.bin
+```  
 
 ### Flash the Sonoff
  1) Unplug your sonoff from the power line _(or you can burn your PC)_
