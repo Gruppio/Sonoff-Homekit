@@ -117,8 +117,10 @@ esptool.py --port $ESPPORT read_flash 0x00000 0x100000 fwbackup.bin
 
 ### Flash the Sonoff
  1) Unplug your sonoff from the power line _(or you can burn your PC)_
- 2) Connect your Sonoff to a serial adapter @ 3.3v
- 3) Run the `flash.sh` script 
+ 2) Press and hold the sonoff button
+ 3) Connect your Sonoff to a serial adapter @ 3.3v
+ 4) Keep the button pressed for 2-3 seconds and release it
+ 5) Run the `flash.sh` script 
 
 ### Add Sonoff to Home app
  1) Connect your iPhone or iPad to the new wifi network `Sonoff Switch-xxx`
