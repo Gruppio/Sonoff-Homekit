@@ -70,6 +70,10 @@ By default the Sonoff will have a Enabled state at power on, you can change this
 
 Done! 🎉 
 
+## Troubleshooting
+
+If the Captive Portal does not close after inserting your WiFi password (and also doesn't connect to your WiFi) then you can run the `erase.sh` script, which will completely erase your Sonoff's flash. After running `erase.sh` you should reflash the Sonoff by following the normal installation instructions. This will most likely solve the issue.
+
 ## If you like this project please:
 
 <a href="https://bmc.xyz/l/SonoffHomekit" target="_blank"><img src="https://raw.githubusercontent.com/Gruppio/Sonoff-Homekit/images/images/buymeacoffee.png" alt="Buy Me A Coffee" width="300" ></a>
